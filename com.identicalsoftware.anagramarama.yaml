@@ -41,8 +41,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/dulsi/anagramarama.git
-        tag: v0.7
-        commit: 87b5fbed3e05e7a96caab47394524c2234fd146a
+        tag: v0.8
+        commit: b16e90390013edbb700d89264fc534ce0ff2431a
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$

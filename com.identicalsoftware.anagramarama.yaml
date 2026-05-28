@@ -12,7 +12,13 @@ finish-args:
   - --share=ipc
   - --socket=x11
   - --socket=pulseaudio
-
+cleanup:
+  - /include
+  - /lib/cmake
+  - /lib/pkgconfig
+  - /share/man
+  - /share/vala
+  - '*.a'
 modules:
   - shared-modules/SDL2/SDL2_image.json
   - name: libjansson

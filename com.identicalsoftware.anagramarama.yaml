@@ -1,6 +1,6 @@
 app-id: com.identicalsoftware.anagramarama
 runtime: org.freedesktop.Platform
-runtime-version: 24.08
+runtime-version: 25.08
 sdk: org.freedesktop.Sdk
 command: anagramarama
 rename-icon: anagramarama
@@ -14,6 +14,7 @@ finish-args:
   - --socket=pulseaudio
 
 modules:
+  - shared-modules/SDL2/SDL2_image.json
   - name: libjansson
     buildsystem: cmake-ninja
     sources:
@@ -27,6 +28,8 @@ modules:
 
   - name: libgamerzilla
     buildsystem: cmake-ninja
+    config-opts:
+      - -DCMAKE_POLICY_VERSION_MINIMUM=3.5
     sources:
       - type: git
         url: https://github.com/dulsi/libgamerzilla.git

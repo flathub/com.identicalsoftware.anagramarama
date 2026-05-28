@@ -41,6 +41,8 @@ modules:
 
   - name: anagramarama
     buildsystem: cmake-ninja
+    license-files:
+      - gpl.txt
     sources:
       - type: git
         url: https://github.com/dulsi/anagramarama.git

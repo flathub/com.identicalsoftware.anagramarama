@@ -1,6 +1,6 @@
 app-id: com.identicalsoftware.anagramarama
 runtime: org.freedesktop.Platform
-runtime-version: 25.08
+runtime-version: '26.08'
 sdk: org.freedesktop.Sdk
 command: anagramarama
 rename-icon: anagramarama
@@ -21,6 +21,7 @@ cleanup:
   - '*.a'
 modules:
   - shared-modules/SDL2/SDL2_image.json
+  - shared-modules/SDL2/SDL2_mixer.json
   - name: libjansson
     buildsystem: cmake-ninja
     sources:
